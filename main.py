@@ -1,6 +1,7 @@
 from tkinter import * 
 from settings import *
 import c_func as cf
+import time
 from matplotlib.figure import Figure 
 from matplotlib.backends.backend_tkagg import (FigureCanvasTkAgg,  
 NavigationToolbar2Tk) 
@@ -15,7 +16,9 @@ def squares_plot(bottom_range, top_range):
                  dpi = 100) 
   
     # list of squares 
+    start = time.perf_counter()
     y = cf.getRangeSquares(bottom_range, top_range)
+    end = time.perf_counter()
   
     # adding the subplot 
     plot1 = fig.add_subplot(111) 
@@ -39,6 +42,7 @@ def squares_plot(bottom_range, top_range):
   
     # placing the toolbar on the Tkinter window 
     canvas.get_tk_widget().pack() 
+    print(end-start)
   
 # the main Tkinter window 
 window = Tk() 
@@ -49,11 +53,11 @@ window.title("Suppy & Demand Simulator")
 # dimensions of the main window 
 window.geometry(f"{WIDTH}x{HEIGHT}") 
 
-my_spinner = Spinbox(window, from_=0, to=1000, font=("Helvetica", 20))
+my_spinner = Spinbox(window, from_=1, to=9999998, font=("Helvetica", 20))
 
 # button that displays the plot 
 plot_button = Button(master = window,  
-                     command = lambda x=0: squares_plot(int(my_spinner.get()), 1000), 
+                     command = lambda x=0: squares_plot(int(my_spinner.get()), 99999999), 
                      height = 2,  
                      width = 10, 
                      text = "Plot") 
