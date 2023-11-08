@@ -5,9 +5,13 @@
  * @version 1.1
 */
 #include <cmath>
+#include <inttypes.h>
 
-extern "C" {
-    long* getRangeSquares(int start, int end) {
+# define DLL00_EXPORT_API __declspec(dllexport)
+
+#include "win_math.h"
+
+DLL00_EXPORT_API long* getRangeSquares(int start, int end) {
         long* squares = new long[end-start+1];
 
         for (int i = start; i < end + 1; i++) {
@@ -16,6 +20,5 @@ extern "C" {
 
         return squares;
     }
-}
 
 int main() {}

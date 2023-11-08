@@ -1,4 +1,4 @@
-CPP_FILENAME = "build/math_func_win.so"
+CPP_FILENAME = "build/math_func.dll"
 
 WIDTH = 500
 HEIGHT = 500
