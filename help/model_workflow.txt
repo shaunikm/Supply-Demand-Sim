@@ -1,0 +1,6 @@
+
+    - attributes for key supply and econ state characteristics
+    - methods to model demand as a function of attributes
+    - plot trends in past demand as a function of key attributes
+    - run regression on the attributes
+    - use that regression model to consider the new good and how it will function 
