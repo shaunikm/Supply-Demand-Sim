@@ -1,2 +1,2 @@
 # Supply-Demand-Sim
-### by Shaunik Musukula and Elliot Barringer
+### by Shaunik Musukula and Elliott Barringer
