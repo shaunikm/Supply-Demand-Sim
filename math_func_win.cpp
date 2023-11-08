@@ -21,4 +21,9 @@ DLL00_EXPORT_API long* getRangeSquares(int start, int end) {
         return squares;
     }
 
+extern "C" {
+    
+}
+
+// needed to compile
 int main() {}
