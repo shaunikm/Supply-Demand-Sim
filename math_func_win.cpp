@@ -18,4 +18,9 @@ extern "C" {
     }
 }
 
+extern "C" {
+    
+}
+
+// needed to compile
 int main() {}
