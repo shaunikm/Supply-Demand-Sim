@@ -4,7 +4,6 @@
  * @author Shaunik Musukula
  * @version 1.1
 */
-#include <iostream>
 #include <cmath>
 
 extern "C" {
