@@ -5,5 +5,3 @@ def getRangeSquares(start, end):
     result = [squares[i] for i in range(end-start+1)]
     del squares
     return result
-
-print(getRangeSquares(5, 10))
