@@ -6,6 +6,7 @@
 */
 #include <cmath>
 
+extern "C" {
 long* getRangeSquares(int start, int end) {
         long* squares = new long[end-start+1];
 
@@ -15,6 +16,7 @@ long* getRangeSquares(int start, int end) {
 
         return squares;
     }
+}
  
 // needed to compile
 int main() {}

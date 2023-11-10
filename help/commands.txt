@@ -1,5 +1,11 @@
+MAC:
 Compile shared library:
-g++ -fPIC -shared -o build/math_func.so math_func.cpp
+g++ -fPIC -shared -o .builds/math_func.so ./Mac/math_func.cpp
 
-Compile math_func.cpp & run:
-g++ math_func.cpp -o math_func && ./math_func
+Compile shared library and run:
+g++ ./Mac/math_func.cpp -o ./Mac/math_func && ./Mac/math_func
+
+
+WINDOWS:
+Compile shared library:
+g++ -fPIC -shared -o .\builds\math_func_win.so .\Windows\math_func_win.cpp
