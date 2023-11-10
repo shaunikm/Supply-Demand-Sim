@@ -5,12 +5,12 @@ import time
 from matplotlib.figure import Figure 
 from matplotlib.backends.backend_tkagg import (FigureCanvasTkAgg,  
 NavigationToolbar2Tk) 
-  
+
 # plot function is created for  
 # plotting the graph in  
 # tkinter window 
 def squares_plot(bottom_range, top_range):
-  
+    
     # the figure that will contain the plot 
     fig = Figure(figsize = (10, 5), 
                  dpi = 100) 
