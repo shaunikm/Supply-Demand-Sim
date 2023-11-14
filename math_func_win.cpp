@@ -1,7 +1,7 @@
 /**
  * This file contains the functions to be used in main.py
  * 
- * @author Shaunik Musukula
+ * @author Shaunik Musukula and Elliott Barringer
  * @version 1.1
 */
 #include <cmath>

@@ -4,3 +4,5 @@
     - plot trends in past demand as a function of key attributes
     - run regression on the attributes
     - use that regression model to consider the new good and how it will function 
+
+- 
