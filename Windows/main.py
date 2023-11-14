@@ -10,7 +10,7 @@ NavigationToolbar2Tk)
 # plotting the graph in  
 # tkinter window 
 def squares_plot(bottom_range, top_range):
-  
+    
     # the figure that will contain the plot 
     fig = Figure(figsize = (10, 5), 
                  dpi = 100) 
